@@ -1,0 +1,7 @@
+create view select_service_with_certain_amount_of_audience
+as
+select orderedservice.*
+from orderedservice
+join service_environment on orderedservice.id = service_environment.id_service
+join publishingenvironment on publishingenvironment.id = service_environment.id_environment
+where coveredAudience>2000

@@ -1,0 +1,3 @@
+
+select agencyName
+from advertesingagency;
